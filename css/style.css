@@ -1,0 +1,379 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;color: white;}
+a:hover{text-decoration: none; color: unset;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;margin-bottom: 0;}
+/*--------------------*/
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/raleway-v19-cyrillic-regular.woff2') format('woff2'),
+         url('../fonts/raleway-v19-cyrillic-regular.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/raleway-v19-cyrillic-500.woff2') format('woff2'),
+       url('../fonts/raleway-v19-cyrillic-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/raleway-v19-cyrillic-600.woff2') format('woff2'),
+         url('../fonts/raleway-v19-cyrillic-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: normal;
+    src: local(''),
+         url('../fonts/Akrobat.woff') format('woff2');
+}
+
+
+h1 {
+    font-family: 'Akrobat';
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 52px;    
+}
+
+h2 {
+    font-family: 'Akrobat';
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: 'Raleway';
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+h6 {
+    
+}
+
+body {
+    background: right / cover no-repeat url(/img/bg_desktop.jpg);
+    color: white;
+    font-family: 'Raleway';
+}
+
+.wrapper, .wrapper-bot {
+    padding-top: 30px;
+}
+
+.wrapper-center {
+    margin-top: 80px;
+}
+
+.wrapper-bot {
+    display: flex;
+    align-items: center;
+}
+
+.header-left, .header-right {
+    display: flex;
+}
+
+.header-left {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+.header-icons {
+    display: flex;
+    position: absolute;
+    top: 63px;
+    right: 50px;
+}
+
+.header-icons img {
+    margin-right: 10px;
+}
+
+/* .header-icons a:hover {
+    transform: scale(1.1);
+}
+ */
+.content-right {
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.content-right h5 {
+    text-align: start;
+    width: 320px;
+}
+
+.content-right a{
+    color: #4087BE;
+}
+
+.content-left img {
+    width: 100%;
+}
+
+
+.content__right-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search__form-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-form input {
+    width: 320px;
+    height: 60px;
+    border: 2px solid #D2D6D9;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    color: #222222;
+}
+
+input::placeholder {
+    font-family: 'Raleway';
+    color: #222;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.search-btn {
+    width: 320px;
+    height: 60px;
+    background-color: #DA0007;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn img {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .header-icons {
+        right: 20px;
+    }
+
+    .wrapper-center {
+        margin-top: 30px;
+    }
+
+    .content-right {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .content-right {
+        text-align: left;
+    }
+
+    .search-form {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .search__form-bot {
+        margin-left: 20px;
+    }
+
+    .search__form-bot:first-child {
+        margin-left: 0;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 991.98px) {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        line-height: 44px;
+    }
+    
+    h3 {
+        font-size: 16px;
+        width: 350px;
+    }
+    
+    h4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    h5 {
+    }
+    
+    body {
+        background: right / cover no-repeat url(/img/bg_mobile.jpg);
+    }
+
+    .wrapper-center {
+        margin-top: 30px;
+    }
+
+    .content-left img {
+        width: 100%;
+    }
+
+    .header-icons {
+        top: 43px;
+        right: 130px;
+    }
+    .header-icons img {  
+        width: 36px;
+        height: 36px;
+    }
+
+    .header-left img {
+        max-width: 67px;
+    }
+
+}
+@media screen and (max-width: 767.98px) {
+
+    .header-icons {
+        position: absolute;
+        top: 45px;
+        right: 90px;
+    }
+
+    h3 {
+        margin: auto;
+    }
+
+    .header-left img {
+        max-width: 67px;
+    }
+
+}
+    @media screen and (max-width: 575.98px) {
+
+    h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        line-height: 44px;
+    }
+    
+    h3 {
+        margin: auto;
+        width: 300px;
+    }
+    
+    h4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    h5 {
+    }
+
+    .wrapper, .wrapper-bot {
+        padding-top: 15px;
+    }
+
+    .header-icons {
+        position: unset;
+        margin-top: 15px;
+        justify-content: center;
+        right: 20px;
+    }
+
+    .content-left img {
+        width: 100%;
+        }
+
+    .header-left {
+        text-align: center;
+    }
+    
+    .header-left img {
+        max-width: 67px;
+    }
+
+    .wrapper-center {
+        margin-top: 20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    width: 1146px;
+
+} */
