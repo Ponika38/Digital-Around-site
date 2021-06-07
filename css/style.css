@@ -87,7 +87,7 @@ h6 {
 }
 
 body {
-    background: right / cover no-repeat url(/img/bg_desktop.jpg);
+    background: right / cover no-repeat url(../img/bg_desktop.jpg);
     color: white;
     font-family: 'Raleway';
 }
@@ -158,7 +158,7 @@ body {
     margin-top: 20px;
 }
 
-.search-form {
+#form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,13 +170,15 @@ body {
     flex-direction: column;
 }
 
-.search-form input {
+#form input {
+    font-family: 'Akrobat';
     width: 320px;
     height: 60px;
     border: 2px solid #D2D6D9;
     margin-bottom: 15px;
     padding-left: 20px;
     color: #222222;
+    font-size: 20px;
 }
 
 input::placeholder {
@@ -220,7 +222,7 @@ input::placeholder {
         text-align: left;
     }
 
-    .search-form {
+    #form {
         align-items: flex-start;
         display: flex;
         flex-direction: row;
@@ -263,7 +265,7 @@ input::placeholder {
     }
     
     body {
-        background: right / cover no-repeat url(/img/bg_mobile.jpg);
+        background: right / cover no-repeat url(../img/bg_mobile.jpg);
     }
 
     .wrapper-center {
