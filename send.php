@@ -12,7 +12,7 @@ require 'phpmailer/PHPMailer.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
-$tel = $_POST['tell'];
+$tel = $_POST['phone'];
 
 // Формирование самого письма
 $title = "Заголовок письма";

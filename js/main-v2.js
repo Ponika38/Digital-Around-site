@@ -4,7 +4,7 @@ Vue.use(VueMask.VueMaskPlugin);
 const { required, minLength } = window.validators;
 
 let callbackForm = new Vue({
-    el: "#f-callback",
+    el: "#form",
     data: {
         name: '',
         phone: '',
@@ -28,16 +28,10 @@ let callbackForm = new Vue({
                     type: "POST",
                     url: "send.php",
                     data: "name=" + this.name + "&phone=" + this.phone,
-                    success: function(msg) {
-                        $.fancybox.close();
-                        $.fancybox.open(
-                            '<div id="success" class="modal-form form-success">' +
-                            '<div class="form-success__title">Спасибо!</div>' +
-                            '<div class="form-success__text">' +
-                            'Ваша заявка принята.<br>' +
-                            'В ближайшее время с вами свяжется наш менеджер.' +
-                            '</div>' +
-                            '</div>');
+                    success: function(data) {
+                        if (data == 'ok') {
+                            alert ("Ваша заявка отправлена");
+                        }
                     }
                 });
             }
